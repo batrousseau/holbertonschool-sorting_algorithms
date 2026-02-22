@@ -1,4 +1,4 @@
-```
+
 # holbertonschool-sorting_algorithms
 
 ## Description
@@ -21,5 +21,3 @@ Ce projet porte sur l'implémentation de différents algorithmes de tri en langa
 
 ## Author
 [https://github.com/batrousseau](https://github.com/batrousseau)
-
-```
