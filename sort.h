@@ -24,5 +24,7 @@ int get_list_depth(listint_t *list);
 listint_t **swap_nodes(listint_t **list, listint_t *a, listint_t *b);
 void selection_sort(int *array, size_t size);
 size_t swap_integer(int *a, int *b);
+void quick_sort(int *array, size_t size);
+void real_quick_sort(int *array, size_t size, int *start_point, size_t lenght);
 
 #endif
