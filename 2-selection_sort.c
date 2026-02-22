@@ -43,18 +43,20 @@ void selection_sort(int *array, size_t size)
 	min = array[swap_count];
 	for (j = 0; j < size; j++)
 	{
+		/*befor each loop, set the minimum at the current position*/
 		min = array[j];
-		/* Finding the minimum and modifying i after each swap*/
+		/*i = j so that you don't traverse already sorted parts*/
 		for (i = j; i < size; i++)
 		{
-
+			/* this condition dynamically sets the new minimum*/
 			if (min > *(array + i))
 			{
 				min = *(array + i);
+				/*k let you save mininum position in the array*/
 				k = i;
 			}
 		}
-
+		/* this condition prevents a swap at the end of the array*/
 		if (*(array + j) > min)
 		{
 			swap_count += swap_integer((array + j), (array + k));
