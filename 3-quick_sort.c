@@ -46,7 +46,10 @@ void real_quick_sort(int *array, size_t size, int *start_point, size_t lenght)
 		if (*(start_point + j) <= pivot)
 		{
 			swap_integer((start_point + i), (start_point + j));
-			print_array(array, size);
+			if (*(start_point + i) != *(start_point + j))
+			{
+				print_array(array, size);
+			}
 			i++;
 		}
 	}
